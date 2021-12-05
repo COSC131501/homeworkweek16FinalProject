@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores BBQ Pits & Accessories</title>
+    <link href="service_layout2.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+
+        h1 {
+
+            font-family: 'Sancreek', cursive;
+            font-size: 70px;
+            text-align: center;
+        }
+
+        @keyframes bounce {
+            0% {
+                left: 0%;
+            }
+
+            100% {
+                left: calc(78% - 30rem);
+            }
+        }
+
+        .balls {
+            background: linear-gradient(blue, white, red);
+            position: relative;
+            left: calc(100% - 30rem);
+            width: 20rem;
+            height: 20em;
+            border-radius: 0rem;
+            animation: bounce 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: -2s;
+        }
+
+        #bookshelf img {
+            border-radius: 20%;
+            top: 2px;
+            margin-left: -400px;
+        }
+
+        fieldset {
+
+            width: 75%;
+
+            border: 2px solid #9435d4;
+
+        }
+
+        legend {
+
+            font-weight: bold;
+
+            font-size: 125%;
+
+        }
+
+        label.question {
+
+            width: 225px;
+
+            float: left;
+
+            text-align: left;
+
+            font-weight: bold;
+
+        }
+
+        span.question {
+
+            font-weight: bold;
+
+        }
+
+        input,
+        textarea,
+        select,
+        button {
+
+            border: 1px solid #000;
+
+            padding: 3px;
+
+        }
+
+        #buttons {
+
+            margin-top: 12px;
+
+        }
+
+        #errors {
+
+            color: red;
+
+            font-weight: bold;
+
+            font-size: larger;
+
+        }
+
+        a:link {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        html,
+        body {
+            width: 99%;
+            margin: 5px;
+            padding: 5px;
+            overflow-x: hidden;
+        }
+
+        .tableclass {
+            border: solid white 10px;
+        }
+
+        #my_table {
+            margin-top: 10px;
+            margin: right 80px;
+        }
+
+        .box3 img {
+            object-fit: fill;
+        }
+
+
+        #clock {
+            font-size: 20px;
+            color: white;
+            width: 112px;
+            margin: -0px 0px 0px 0px;
+            text-align: left;
+            border: 4px solid black;
+            border-radius: 0px 00px;
+            height: 1em;
+        }
+
+        a:visited {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .one {
+            width: 590px;
+            height: 910px;
+            margin-bottom: 0%;
+            margin-top: 60%;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(services_4.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: left;
+            margin: -10px 0px 30px
+        }
+
+        .three {
+            width: 300px;
+            height: 270px;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(index_like.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: right;
+            margin: 0px -290px 30px
+        }
+
+        .four {
+            width: 300px;
+            height: 100px;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(index_subscribe.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: left;
+            margin: 0px 10px 60px
+        }
+
+        ul {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div id="clock"></div>
+
+        <script>
+            setInterval(showTime, 1000);
+            function showTime() {
+                let time = new Date();
+                let hour = time.getHours();
+                let min = time.getMinutes();
+                let sec = time.getSeconds();
+                am_pm = "A.M.";
+
+                if (hour > 12) {
+                    hour -= 12;
+                    am_pm = "P.M.";
+                }
+                if (hour == 0) {
+                    hr = 12;
+                    am_pm = "A.M.";
+                }
+
+                hour = hour < 10 ? "0" + hour : hour;
+                min = min < 10 ? "0" + min : min;
+                sec = sec < 10 ? "0" + sec : sec;
+
+                let currentTime = hour + ":"
+                    + min + ":" + sec + am_pm;
+
+                document.getElementById("clock")
+                    .innerHTML = currentTime;
+            }
+
+            showTime();
+        </script>
+
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">S
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">A
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">L
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">E
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">!
+        </div>
+
+        <h5 class="headtxt7" style="float: right">Search the Website</h5>
+        <div id="header1" style="float: right">
+
+            <input type="text" placeholder="Search the Website...">
+            <button>Search</button><br><br>
+            <img src="index_logo.png" alt="logo"
+                style="width:420px;height:265px; position: absolute; left: 750px;"><br><br><br>
+            <h3>Current Time</h3>
+            <script src="timegreet.js"></script>
+
+        </div>
+    </header>
+    <div style="float: left">
+        <h1 class="headtxt">Flores BBQ PITS & Accessories</h1>
+        <div style="float: left">
+            <header id="header3">
+                <p style="text-align: left"></p>
+            </header>
+            <nav>
+                <ul style="left: 90px">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="BBQevents.html">Events</a></li>
+                    <li><a href="services.html">Products</a></li>
+                    <li><a href="Location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+
+                </ul>
+            </nav>
+
+            <table style="width:98.5%; height: 50px; border: 8px solid">
+                <tr>
+                    <td>
+
+                        <header>
+                            <h1 style=color:black;>BBQ Pit Charges</h1>
+                        </header><br><br><br>
+                        <form name="theform">
+                            <table>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:-560px; top:2px"><strong>
+                                            <h3 style="color: white;">Room Charges:</h3>
+                                        </strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td id="bookshelf" rowspan="9"><img src="services_1.jpg" width="330" height="380"
+                                            class="box box3" alt="hotel charges"></td>
+                                    <td style="position:relative; color:black; right:110px; top:-25px"><strong>Posted
+                                            Price:</strong></td>
+                                    <td style="position:relative; color:black; right:195px; top:-20px"><input
+                                            name="nightFmInput" size="10"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; right:-480px; top:-100px"><img src=""></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:88px; top:-40px">
+                                        <strong>Quantity:</strong></td>
+                                    <td style="position:relative; color:black; right:195px; top:-40px"><input
+                                            name="nightlyFmInput" size="10"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:-20px; top:-350px"><strong>
+                                            <h3 style="color: white;">Item Total Charges:</h3>
+                                        </strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:165px; top:-70px"><strong>Cup
+                                            Holder -$ 20.50:</strong></td>
+                                    <td style="position:relative; color:black; right:195px; top:-65px"><input
+                                            name="roomSerFmInput" size="10"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:197px; top:-60px"><strong>Wood
+                                            Finishings -$ 60.50:</strong></td>
+                                    <td style="position:relative; color:black; right:195px; top:-60px"><input
+                                            name="telephoneFmInput" size="10"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:115px; top:-50px">
+                                        <strong>Tip-Optional:</strong></td>
+                                    <td style="position:relative; color:black; right:195px; top:-55px"><input
+                                            name="miscFmInput" size="10"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:-50px; top:-300px"><strong>
+                                            <h3 style="color: white;">Total Charges:</h3>
+                                        </strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:140px; top:-80px"><strong>Manual
+                                            labour: $</strong></td>
+                                    <td style="background-color: white; outline-style: solid; position:relative; right: 188px; top:-80px; color: black"
+                                        id="roomFmOutput"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:-45px; top:-70px"><strong>Permit:
+                                            $</strong></td>
+                                    <td style="background-color: white; outline-style: solid; position:relative; right: 8px; top:-70px; color: black"
+                                        id="chargesFmOutput"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:-35px; top:-60px"><strong>Subtotal:
+                                            $</strong></td>
+                                    <td style="background-color: white; outline-style: solid; position:relative; right: 8px; top:-60px; color: black"
+                                        id="stotalFmOutput"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:-8px; top:-50px"><strong>Tax:
+                                            (8.25%) $</strong></td>
+                                    <td style="background-color: white; outline-style: solid; position:relative; right: 8px; top:-50px; color: black"
+                                        id="taxFmOutput"></td>
+                                </tr>
+
+                                <tr>
+                                    <td style="position:relative; color:black; right:5px; top:-40px"><strong>Total
+                                            Charges: $</strong></td>
+                                    <td style="background-color: white; outline-style: solid; position:relative; right: 8px; top:-40px; color: black"
+                                        id="totalchargeFmOutput"></td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="button" style="position:relative; right: -135px; top:-20px"
+                                            name="calc" value="Calculate" onclick="calculate();">
+                                        <input type="button" style="position:relative; right: -140px; top:-20px"
+                                            name="clear" value="Clear" onclick="clearinfo();">
+                                    </td>
+                                </tr>
+                            </table>
+                            <img src="services_2.png" alt="Girl in a jacket" width="600" height="500" margin="0px">
+                            <img src="services_3.gif" alt="Girl in a jacket" width="800" height="400" margin="0px">
+                    </td>
+                </tr>
+            </table>
+            <script>
+                document.theform.practiceFmInput.focus();
+
+                function calculate() {
+                    // declare constants and the variables
+
+                    var night;
+                    var nightly;
+                    var roomSer;
+                    var telephone;
+                    var misc;
+
+                    var room;
+                    var charges;
+                    var stotal;
+                    var tax;
+                    var totalcharge;
+
+                    //get values from the text fields
+                    night = parseInt(document.theform.nightFmInput.value);
+                    nightly = parseFloat(document.theform.nightlyFmInput.value);
+                    roomSer = parseFloat(document.theform.roomSerFmInput.value);
+                    telephone = parseFloat(document.theform.telephoneFmInput.value);
+                    misc = parseFloat(document.theform.miscFmInput.value);
+                    //calculate the overall numeric average
+                    room = parseFloat(night * nightly);
+                    charges = parseFloat(roomSer + telephone + misc);
+                    stotal = parseFloat(room + charges);
+                    tax = parseFloat(stotal * .0825);
+                    totalcharge = parseFloat(stotal + tax);
+
+                    document.getElementById("roomFmOutput").innerHTML = room.toFixed(2);
+                    document.getElementById("chargesFmOutput").innerHTML = charges.toFixed(2);
+                    document.getElementById("stotalFmOutput").innerHTML = stotal.toFixed(2);
+                    document.getElementById("taxFmOutput").innerHTML = tax.toFixed(2);
+                    document.getElementById("totalchargeFmOutput").innerHTML = totalcharge.toFixed(2)
+
+                }
+
+                function clearinfo() {
+                    document.theform.nightFmInput.value = " ";
+                    document.theform.nightlyFmInput.value = " ";
+                    document.theform.roomSerFmInput.value = " ";
+                    document.theform.telephoneFmInput.value = " ";
+                    document.theform.miscFmInput.value = " ";
+
+                    document.getElementById("roomFmOutput").innerHTML = " ";
+                    document.getElementById("chargesFmOutput").innerHTML = " ";
+                    document.getElementById("stotalFmOutput").innerHTML = " ";
+                    document.getElementById("taxFmOutput").innerHTML = " ";
+                    document.getElementById("totalchargeFmOutput").innerHTML = " ";
+
+                    document.theform.nightFmInput.focus();
+                }
+            </script>
+            </form>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+
+            <script>
+
+                function getQuote() {
+
+                    // Create the arrays
+
+                    quotes = new Array(4);
+
+                    sources = new Array(4);
+
+
+
+                    // Initialize the arrays with quotes
+
+                    quotes[0] = "The quality, not the longevity, " +
+
+                        "of one's life is what is important. ";
+
+                    sources[0] = "Martin Luther King, Jr.";
+
+
+
+                    quotes[1] = "That it will never come again is what makes life sweet.";
+
+                    sources[1] = "Emily Dickinson";
+
+
+
+                    quotes[2] = "However difficult life may seem," +
+
+                        " there is always something you can do and succeed at. ";
+
+                    sources[2] = "Stephen Hawking";
+
+
+
+                    quotes[3] = "Let us put our minds together and see what life we can make for our children.";
+
+                    sources[3] = "Sitting Bull";
+
+
+
+                    // Get a random index into the arrays
+
+                    i = Math.floor(Math.random() * quotes.length);
+
+
+
+                    // Write out the quote as HTML
+
+                    document.write("<p style='background-color: #ffb6c1' >\"");
+
+                    document.write(quotes[i] + "\"");
+
+                    document.write("<em>- " + sources[i] + "</em>");
+
+                    document.write("</p>");
+
+                }
+
+              // Stop hiding the script -->
+
+            </script>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+
+            <body>
+
+                <p>Following is a random quotable quote. To see a new quote
+
+                    just reload this page.</p>
+
+
+
+                <script>
+
+                    getQuote();
+
+              // Stop hiding the script -->
+
+                </script>
+                <header id="header4">
+                    <p style="text-align: left"></p>
+                </header>
+                <h1 class="headtxt2">Services</h1>
+
+
+                <div id="wrap">
+
+
+                    <p>We serve the people of the Rio Grande Valley and provide them with quality 
+                        BBQ pits and accessories. We offer a variety of choices for the person who’s 
+                        on a budget to the person who likes to entertain guests with his lavish house 
+                        parties. Our BBQ pits are the best quality that will bring families close and last a lifetime.<br>
+                    </p>
+
+                </div>
+            </body>
+
+
+            <p id="source"></p>
+
+            <img width="550px" id="large_photo" style="border: 1px solid black; margin-left: 13px;" src="service_a.jpg"
+                alt="large photo">
+        </div>
+
+        <section id="main-content">
+            <div>
+                <i>Click on the small images to change the larger image above</i>
+            </div>
+        </section>
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'service_b.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="service_b.jpg" width="80px" height="90px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'service_c.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="service_c.jpg" width="80px" height="90px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'service_d.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="service_d.jpg" width="80px" height="90px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'service_e.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 6px;" src="service_e.jpg" width="80px" height="90px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'service_f.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="service_f.jpg" width="80px" height="90px"
+                alt="photo #1"></a>
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                'service_g.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="service_g.jpg" width="80px" height="90px"
+                alt="photo #1"></a>
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+            'service_h.jpeg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="service_h.jpeg" width="80px" height="90px"
+                alt="photo #1"></a>
+    </div>
+    </nav>
+    </div>
+
+
+
+    <section id="main">
+        <section id="left-content">
+
+
+            <p></p><br>
+            <section>
+                <div class="one"></div>
+                <div class="two"></div>
+            </section>
+
+            <ul>
+
+
+            </ul>
+            </div>
+        </section>
+        <section id="main-content">
+            </div>
+            <form name="gbForm" method="post" action="URL_to_script">
+
+                <output id="errors"></output>
+
+                <fieldset>
+
+                    <legend>25% Discount Survey: Chance to Win!:</legend>
+
+                    <p>
+
+                        <label class="question" for="the_name">
+
+                            What is your name?</label>
+
+                        <input type="text" id="the_name" name="the_name" placeholder="Enter your full name." size="50"
+                            requiredautofocus>
+
+                    </p>
+
+                    <p>
+
+                        <label class="question" for="the_email">What is your email
+
+                            address?</label>
+
+                        <input type="email" id="the_email" name="the_email" placeholder="Please use a real one!"
+                            size="50" required>
+
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Website Question</legend>
+
+                    <p>
+
+                        <span class="question">Please check all that apply:</span><br>
+
+                        <input type="checkbox" id="like_it" name="some_statements[]"
+                            value=" Well Designed and Functional.">
+
+                        <label for="like_it"> Well Designed and Functional.</label><br>
+
+                        <input type="checkbox" id="the_best" name="some_statements[]" value="Easy to Use">
+
+                        <label for="the_best">Easy to Use.</label><br>
+
+                        <input type="checkbox" id="jealous" name="some_statements[]" value="Optimized for Mobile.">
+
+                        <label for="jealous">Optimized for Mobile.</label><br>
+
+                        <input type="checkbox" id="no_taste" name="some_statements[]" value="Fresh, Quality Content.">
+
+                        <label for="no_taste">Fresh, Quality Content.</label>
+
+                    </p>
+
+                    <p>
+
+                        <label for="choose_scale"><span class="question">Please
+
+                                rate my site on a scale of 1 (poor) to 10
+
+                                (awesome):</span></label>
+
+                        <input type="number" id="choose_scale" name="choose_scale" min="1" max="10" step="1" value="5">
+
+                    </p>
+
+                    <p>
+
+                        <span class="question">Please choose the one thing you love
+
+                            Best about my web site:</span><br>
+
+                        <input type="radio" id="the_picture" name="best_thing" value="me">
+
+                        <label for="the_picture">I Can Find Stuff</label><br>
+
+                        <input type="radio" id="the_animals" name="best_thing" value="animals">
+
+                        <label for="the_animals">It’s Got Personality</label><br>
+
+                        <input type="radio" id="the_dandelions" name="best_thing" value="dandelions">
+
+                        <label for="the_dandelions">It Works</label><br>
+
+                        <input type="radio" id="the_story" name="best_thing" value="childhood story">
+
+                        <label for="the_story">Your Contact Form Is Effortless</label><br>
+
+                        <input type="radio" id="the_treasures" name="best_thing" value="Elvis treasures">
+
+                        <label for="the_treasures">It Looks Good</label>
+
+                    </p>
+
+                    <p>
+
+                        <label for="the_worst"><span class="question">
+
+                                Please indicate the one thing I could improve about my web site:
+
+                            </span></label><br>
+
+                        <input type="text" id="the_worst" name="the_worst" placeholder="There's nothing bad, is there?"
+                            list="listOfBadChoices" size="50">
+
+                    </p>
+
+                    <p>
+
+                        <label for="how_improve"><span class="question">What else
+
+                                would you like to see on my web site?</span></label><br>
+
+                        <select id="how_improve" name="how_improve" size="4" multiple>
+
+                            <optgroup label="Preferred">
+
+                                <option value="Nothing. It's perfect.">Nothing. It's
+
+                                    perfect.</option>
+
+                            </optgroup>
+
+                            <optgroup label="Likely">
+
+                                <option value="More about the animals.">More about the
+
+                                    BBQ pits.</option>
+
+                                <option value="More about the dandelions.">More price options.</option>
+
+                            </optgroup>
+
+                            <optgroup label="Unlikely">
+
+                                <option value="More about Elvis.">More estimates.
+
+                                </option>
+
+                            </optgroup>
+
+                        </select>
+
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Comments:</legend>
+
+                    <p>
+
+                        <label for="message"><span class="question">Feel free to leave a
+
+                                comment:</span></label>
+
+                        <textarea id="message" name="message" rows="7" cols="55">
+
+                      </textarea>
+
+                    </p>
+
+                </fieldset>
+
+                <div id="buttons">
+
+                    <input type="submit" value="Click Here to Submit"> or
+
+                    <input type="reset" value="Erase and Start Over"> or
+
+                    <button type="button" id="standardValues">Fill in Standard
+
+                        Values</button>
+
+                </div>
+
+            </form>
+
+            <datalist id="listOfBadChoices">
+
+                <option value="nothing"></option>
+
+                <option value="nada"></option>
+
+                <option value="zip"></option>
+
+                <option value="zilch"></option>
+
+                <option value="I can't think of anything"></option>
+
+            </datalist>
+        </section>
+    </section>
+    <footer id="footer1">
+        <p>
+        <h2 class="headtxt6" style="text-align: center"><b></b></h2>
+        </p><br><br>
+        </div>
+        <p></p>
+        <div>
+            <section>
+                <div class="three"></div><br>
+                <div class="four"></div>
+            </section>
+            <b>
+                <h2>Follow us on:</h2>
+            </b><br>
+
+            <p style="color:orange;">Instagram 📸</p>
+            <h3>https://www.instagram.com/RGVWeld</h3>
+            <div>
+                <a href="https://www.instagram.com/" onclick="alert('A-ha! An Event!');">Go to instagram</a><br>
+            </div>
+            <p style="color:orange;">Twitter 🐦</p>
+            <h3>https://twitter.com/RGVWeld</h3>
+            <div>
+                <a href="https://twitter.com/?lang=en" onclick="alert('A-ha! An Event!');">Go to twitter</a>
+            </div>
+
+            </section>
+            </section>
+    </footer>
+
+    <footer id="footer2">
+        <nav style="text-align: center">
+            <a href="history.html">BBQ History</a> |
+            <a href="promotions.html">Promotions</a> |
+            <a href="customer.html">Customer/Q&A</a> |
+            <a href="videos.html">Videos</a> |
+        </nav>
+        <p style="color: white;">1234 Pecan Road, McAllen, Texas 78501</p>
+        <p style="text-align: center;">&copy; 2021 Flores BBQ PITS & Accessories, all rights reserved</p>
+    </footer>
+    <p></p>
+    <a href="../">Go Back To Homepage</a><br>
+    <strong>Juan L. Flores</strong>
+</body>
+
+</html>

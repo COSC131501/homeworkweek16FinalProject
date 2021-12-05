@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores BBQ Pits & Accessories</title>
+    <link href="layout2.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+
+        h1 {
+
+            font-family: 'Sancreek', cursive;
+            font-size: 70px;
+            text-align: center;
+        }
+
+        @keyframes bounce {
+            0% {
+                left: 0%;
+            }
+
+            100% {
+                left: calc(78% - 30rem);
+            }
+        }
+
+        .balls {
+            background: linear-gradient(blue, white, red);
+            position: relative;
+            left: calc(100% - 30rem);
+            width: 20rem;
+            height: 20em;
+            border-radius: 0rem;
+            animation: bounce 6s;
+            animation-timing-function: cubic-bezier(.5, .5, -.5, 1.5);
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        a:link {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        th,
+        td {
+            border: 3px solid black;
+            height: 25px;
+        }
+
+        html,
+        body {
+            width: 99.5%;
+            margin: 5px;
+            padding: 5px;
+            overflow-x: hidden;
+        }
+
+        #clock {
+            font-size: 20px;
+            color: white;
+            width: 112px;
+            margin: -0px 0px 0px 0px;
+            text-align: left;
+            border: 4px solid black;
+            border-radius: 0px 00px;
+            height: 1em;
+        }
+
+        a:visited {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+
+        .one {
+            width: 590px;
+            height: 350px;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(index_usa.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: left;
+            margin: -38px 0px 30px
+        }
+
+        .three {
+            width: 300px;
+            height: 270px;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(index_like.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: right;
+            margin: 0px -290px 30px
+        }
+
+        .four {
+            width: 300px;
+            height: 100px;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(index_subscribe.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: left;
+            margin: 0px 10px 60px
+        }
+
+        ul {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10%;
+        }
+        #contact {
+            margin-top: -38%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div id="clock"></div>
+
+        <script>
+            setInterval(showTime, 1000);
+            function showTime() {
+                let time = new Date();
+                let hour = time.getHours();
+                let min = time.getMinutes();
+                let sec = time.getSeconds();
+                am_pm = "A.M.";
+
+                if (hour > 12) {
+                    hour -= 12;
+                    am_pm = "P.M.";
+                }
+                if (hour == 0) {
+                    hr = 12;
+                    am_pm = "A.M.";
+                }
+
+                hour = hour < 10 ? "0" + hour : hour;
+                min = min < 10 ? "0" + min : min;
+                sec = sec < 10 ? "0" + sec : sec;
+
+                let currentTime = hour + ":"
+                    + min + ":" + sec + am_pm;
+
+                document.getElementById("clock")
+                    .innerHTML = currentTime;
+            }
+
+            showTime();
+        </script>
+
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">S
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">A
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">L
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">E
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">!
+        </div>
+
+        <h5 class="headtxt7" style="float: right">Search the Website</h5>
+        <div id="header1" style="float: right">
+
+            <input type="text" placeholder="Search the Website...">
+            <button>Search</button><br><br>
+            <img src="index_logo.png" alt="logo"
+                style="width:420px;height:265px; position: absolute; left: 767px;"><br><br><br>
+            <h3>Current Time</h3>
+            <script src="timegreet.js"></script>
+
+
+        </div>
+    </header>
+    <div style="float: left">
+        <h1 class="headtxt">Flores BBQ PITS & Accessories</h1>
+        <div style="float: left">
+            <header id="header3">
+                <p style="text-align: left"></p>
+            </header>
+
+            <nav>
+                <ul style="left: 90px">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="BBQevents.html">Events</a></li>
+                    <li><a href="services.html">Products</a></li>
+                    <li><a href="Location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+
+                </ul>
+            </nav>
+
+            <header>  <h1>Contact</h1></header><br><br><br><br>
+            <p><img src="contact_1.jpg" alt="El Capitan"
+
+                style="width:100px;height:75px;vertical-align:text-top;"><strong>
+        
+                <h2>Owner:</h2></strong> <b>Julian Flores - (Fabricator/Customer Service/Sales) - FloWeld31928@gmail.com - 202-555-0109</b></p>
+        
+                <p><img src="contact_2.jpg" alt="Tunnel View"
+        
+                style="width:100px;height:75px;vertical-align:text-bottom;">
+        
+                <strong><h2>Co-Owner:</h2></strong><b>Alex Flores - (Fabricator/Designer) - FloWeld0084@gmail.com - 202-555-0198</b></p>
+        
+                <p><img src="contact_3.jpg" alt="Upper Yosemite Falls"
+        
+                style="width:100px;height:75px;vertical-align:middle;"><strong><h2>Business Office:</h2></strong><b>Jessica Garcia - (Payroll/Office Clerk) - FloWeld1222@gmail.com - 202-555-6458</b></p>
+        
+                <p><img src="contact_4.jpg" alt="Hanging Rock"
+        
+                style="width:100px;height:75px;vertical-align:baseline;">
+        
+                <strong><h2>Delivery Driver:</h2></strong><b>Jesus Rios - (Delivery/Welder Assistant) - FloWeld5847@gmail.com - 202-555-5937</b></p>
+
+                <img style="float: right;" id="contact" src="contact_5.gif" width="350px" height="300%">
+        
+              </section>
+
+            <div id="banner"></div>
+            <div id="bannerText"></div>
+
+            <script>
+
+                function getQuote() {
+
+                    // Create the arrays
+
+                    quotes = new Array(4);
+
+                    sources = new Array(4);
+
+
+
+                    // Initialize the arrays with quotes
+
+                    quotes[0] = "I have very strong feelings about how you lead your life." +
+
+                        " You always look ahead, " +
+
+                        " you never look back.";
+
+                    sources[0] = "Ann Richards";
+
+
+
+                    quotes[1] = "All you need in this life is ignorance and confidence; " +
+
+                        " then success is sure.";
+
+                    sources[1] = "Mark Twain";
+
+
+
+                    quotes[2] = "You are the sum total of everything you've ever seen, heard, eaten, smelled, been told, forgot - it's all there." +
+
+                        " Everything influences each of us, and because of that I try to make sure that my experiences are positive.";
+
+                    sources[2] = "Maya Angelou";
+
+
+
+                    quotes[3] = "Life is either a great adventure or nothing.";
+
+                    sources[3] = "Helen Keller";
+
+
+
+                    // Get a random index into the arrays
+
+                    i = Math.floor(Math.random() * quotes.length);
+
+
+
+                    // Write out the quote as HTML
+
+                    document.write("<p style='background-color: #ffb6c1' >\"");
+
+                    document.write(quotes[i] + "\"");
+
+                    document.write("<em>- " + sources[i] + "</em>");
+
+                    document.write("</p>");
+
+                }
+
+                    // Stop hiding the script -->
+
+            </script>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+
+            <body>
+
+                <p>
+                <h2>Following is a random quote. To see a new quote
+
+                    just reload this page.</h2>
+                </p>
+
+
+
+                <script>
+
+                    getQuote();
+
+                    // Stop hiding the script -->
+
+                </script>
+
+                <header id="header4">
+                    <p style="text-align: left"></p>
+                </header>
+                <h1 class="headtxt2">Contact</h1>
+                <div id="wrap">
+
+
+                    <p>
+                        Whether you're creating making BBQ for a special day card or celebrating your 
+                        wedding anniversary, or simply making memories with your family. Flores BBQ Pits & Accessories
+                        is here to help. Above is our contact info. Thank you...
+                    </p>
+
+                </div>
+            </body>
+
+
+            <p id="source"></p>
+
+            <img width="550px" id="large_photo" style="border: 1px solid black; margin-left: 13px;" src="index2.jpg"
+                alt="large photo">
+        </div>
+
+        <section id="main-content">
+            <div>
+                <i>Click on the small images to change the larger image above</i>
+            </div>
+        </section>
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexa.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexa.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexb.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexb.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexc.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexc.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexd.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 6px;" src="indexd.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexe.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexe.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                        'indexf.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexf.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+    </div>
+    </nav>
+    </div>
+
+    <section id="main">
+        <section id="left-content">
+
+            <p></p><br>
+            <section>
+                <div class="one"></div>
+                <div class="two"></div>
+            </section>
+
+            <ul>
+
+
+            </ul>
+            </div>
+        </section>
+        <section id="main-content">
+            <h1>Celebrating 20 Years of business...</h1><br><br><br>
+            </div>
+            <p></p>
+            <div>
+                <h2>You can send us a message or email to get started on ideas for building a BBQ pit.
+                    Together we can come up with some great ideas.</h2>
+        </section>
+    </section>
+    <footer id="footer1">
+        <p>
+        <h2 class="headtxt6" style="text-align: center"><b></b></h2>
+        </p><br><br>
+        </div>
+        <p></p>
+        <div>
+            <section>
+                <div class="three"></div><br>
+                <div class="four"></div>
+            </section>
+            <b>
+                <h2>Follow us on:</h2>
+            </b><br>
+
+            <p style="color:orange;">Instagram 📸</p>
+            <h3>https://www.instagram.com/RGVWeld</h3>
+            <div>
+                <a href="https://www.instagram.com/" onclick="alert('A-ha! An Event!');">Go to instagram</a><br>
+            </div>
+            <p style="color:orange;">Twitter 🐦</p>
+            <h3>https://twitter.com/RGVWeld</h3>
+            <div>
+                <a href="https://twitter.com/?lang=en" onclick="alert('A-ha! An Event!');">Go to twitter</a>
+            </div>
+
+            </section>
+            </section>
+    </footer>
+
+    <footer id="footer2">
+        <nav style="text-align: center">
+            <a href="history.html">BBQ History</a> |
+            <a href="promotions.html">Promotions</a> |
+            <a href="customer.html">Customer/Q&A</a> |
+            <a href="videos.html">Videos</a> |
+        </nav>
+        <p style="color: white;">1234 Pecan Road, McAllen, Texas 78501</p>
+        <p style="text-align: center;">&copy; 2021 Flores BBQ PITS & Accessories, all rights reserved</p>
+    </footer>
+    <p></p>
+    <a href="../">Go Back To Homepage</a><br>
+    <strong>Juan L. Flores</strong>
+</body>
+
+</html>

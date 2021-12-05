@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores BBQ Pits & Accessories</title>
+    <link href="layout2.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+
+        h1 {
+
+            font-family: 'Sancreek', cursive;
+            font-size: 70px;
+            text-align: center;
+        }
+
+        @keyframes bounce {
+            0% {
+                left: 0%;
+            }
+
+            100% {
+                left: calc(78% - 30rem);
+            }
+        }
+
+        .balls {
+            background: linear-gradient(blue, white, red);
+            position: relative;
+            left: calc(100% - 30rem);
+            width: 20rem;
+            height: 20em;
+            border-radius: 0rem;
+            animation: bounce 6s;
+            animation-timing-function: cubic-bezier(.5, .5, -.5, 1.5);
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        a:link {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        th,
+        td {
+            border: 3px solid black;
+            height: 25px;
+        }
+
+        html,
+        body {
+            width: 99.5%;
+            margin: 5px;
+            padding: 5px;
+            overflow-x: hidden;
+        }
+
+        #clock {
+            font-size: 20px;
+            color: white;
+            width: 112px;
+            margin: -0px 0px 0px 0px;
+            text-align: left;
+            border: 4px solid black;
+            border-radius: 0px 00px;
+            height: 1em;
+        }
+
+        a:visited {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+
+        .one {
+            width: 590px;
+            height: 350px;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(index_usa.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: left;
+            margin: -38px 0px 30px
+        }
+
+        .three {
+            width: 300px;
+            height: 270px;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(index_like.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: right;
+            margin: 0px -290px 30px
+        }
+
+        .four {
+            width: 300px;
+            height: 100px;
+            background-color: aqua;
+            border: solid 0.25rem black;
+            background: url(index_subscribe.gif) center top / cover no-repeat;
+            border-radius: 1rem;
+            float: left;
+            margin: 0px 10px 60px
+        }
+
+        ul {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div id="clock"></div>
+
+        <script>
+            setInterval(showTime, 1000);
+            function showTime() {
+                let time = new Date();
+                let hour = time.getHours();
+                let min = time.getMinutes();
+                let sec = time.getSeconds();
+                am_pm = "A.M.";
+
+                if (hour > 12) {
+                    hour -= 12;
+                    am_pm = "P.M.";
+                }
+                if (hour == 0) {
+                    hr = 12;
+                    am_pm = "A.M.";
+                }
+
+                hour = hour < 10 ? "0" + hour : hour;
+                min = min < 10 ? "0" + min : min;
+                sec = sec < 10 ? "0" + sec : sec;
+
+                let currentTime = hour + ":"
+                    + min + ":" + sec + am_pm;
+
+                document.getElementById("clock")
+                    .innerHTML = currentTime;
+            }
+
+            showTime();
+        </script>
+
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">S
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">A
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">L
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">E
+        </div>
+        <div class="balls" style="width: 4rem; height: 4rem; color: rgb(0, 0, 0); font-size: 3rem; text-align: center">!
+        </div>
+
+        <h5 class="headtxt7" style="float: right">Search the Website</h5>
+        <div id="header1" style="float: right">
+
+            <input type="text" placeholder="Search the Website...">
+            <button>Search</button><br><br>
+            <img src="index_logo.png" alt="logo"
+                style="width:420px;height:265px; position: absolute; left: 767px;"><br><br><br>
+            <h3>Current Time</h3>
+            <script src="timegreet.js"></script>
+
+
+        </div>
+    </header>
+    <div style="float: left">
+        <h1 class="headtxt">Flores BBQ PITS & Accessories</h1>
+        <div style="float: left">
+            <header id="header3">
+                <p style="text-align: left"></p>
+            </header>
+
+            <nav>
+                <ul style="left: 90px">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="BBQevents.html">Events</a></li>
+                    <li><a href="services.html">Products</a></li>
+                    <li><a href="Location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+
+                </ul>
+            </nav>
+
+            <article>
+
+                <header>
+                <h1>FAQ:</h1><br><br><br><br>
+          
+                </header>
+          
+                <section>
+          
+                  <ol type="#">
+                      <li>What type of wood do you recommend for the BBQ pits? We use mesquite but we recommend experimenting with different type of woods.</li>
+                    </ol>
+                  
+                    <hr>
+          
+                </section>
+                <section>
+          
+                    <ol type="2">
+                        <li>Where should I place my BBQ pit? We recommend flat areas away from low branches and combustibles. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="3">
+                        <li>How much charcoal or wood do I need? We recommend filling the BBQ pit with a little then adding more when the fire starts. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="4">
+                        <li>Do you recommend charcoal or wood for BBQ cooking? Both are good options. We recommend trying both then choose the best option for your family. How much charcoal or wood do I need? We recommend filling the BBQ pit with a little then adding more when the fire starts. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="5">
+                        <li>Where are you located? 1234 Pecan Road, McAllen, Texas 78501 </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="6">
+                        <li>Can I use my BBQ pit while on the influence of alcohol? If the drinking is done in moderation, and everyone is having a good time. We leave it to the customers discretion. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="7">
+                        <li>Why is your website too patriotic? We love our country and encourage veterans to apply at our careers section. We support out first responders, our safe labor laws, and competitive pay. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="8">
+                        <li>How much is your membership? Our membership is $25 for 6 months or $50 for the whole year. Our members have a free entrance to our 25 cook-off competitions in the Rio Grande Valley. Families have a free entrance to experience, live music, food, and games. The membership gives you monthly discounts on our BBQ Pits & Accessories with a complimentary joke of the day guaranteed to make you laugh. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="9">
+                        <li>How should I store my BBQ pit? We recommend visiting our service/products page. We sell a variety of BBQ pit covers. To protect against the elements do not leave BBQ pit out in the open.
+                            What type of products do you offer? We offer a variety of steel pipe BBQ pits to masonry with the latest accessories on our service/products page.
+                            </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="10">
+                        <li>What is your refund policy? You can visit our contact page to request a refund. But its up to our discretion. We offer a refund during the first 30 days. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="11">
+                        <li>Is there a BBQ competition coming up? Our BBQ events page will provide you with the latest information to our upcoming events. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="12">
+                        <li>How long does BBQ meat last? It lasts a few days on the fridge and almost a month on the freezer. We recommend that the food is cooked thoroughly and avoiding food hazards. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="13">
+                        <li>When do you offer promotions? We offer discounts during the 4th of July and summer months. We recommend visiting our promotions page too find out more.  </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="14">
+                        <li>Can you BBQ during the winter? Any time is a good time to grill with family and friends using our BBQ pits.</li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="15">
+                        <li>Do you fix damages to BBQ pits? We provide restoration to our BBQ pits for a small fee. You can also visit our service/products page for covers to protect your BBQ pit against the elements. </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+                  <section>
+          
+                    <ol type="16">
+                        <li>How much do your BBQ pits costs? We have budget options to higher end products. We can help you pick the right one for you by contacting us on our page. Also, you can view our service/products on the web page.  </li>
+                      </ol>
+                    
+                      <hr>
+            
+                  </section>
+          
+              </article>
+
+            <div id="banner"></div>
+            <div id="bannerText"></div>
+
+            <script>
+
+                function getQuote() {
+
+                    // Create the arrays
+
+                    quotes = new Array(4);
+
+                    sources = new Array(4);
+
+
+
+                    // Initialize the arrays with quotes
+
+                    quotes[0] = "Always dream and shoot higher than you know you can do " +
+
+                        "Do not bother just to be better than your contemporaries or predecessors. " +
+
+                        "Try to be better than yourself.";
+
+                    sources[0] = "William Faulkner";
+
+
+
+                    quotes[1] = "I've learned that you shouldn't go through life with a catcher's mitt on both hands;  " +
+
+                        "you need to be able to throw something back.";
+
+                    sources[1] = "Maya Angelou";
+
+
+
+                    quotes[2] = "The secret to getting" +
+
+                        " ahead is getting started.";
+
+                    sources[2] = "Mark Twain";
+
+
+
+                    quotes[3] = "Life is never fair, and perhaps it is a good thing for most of us that it is not.";
+
+                    sources[3] = "Oscar Wilde";
+
+
+
+                    // Get a random index into the arrays
+
+                    i = Math.floor(Math.random() * quotes.length);
+
+
+
+                    // Write out the quote as HTML
+
+                    document.write("<p style='background-color: #ffb6c1' >\"");
+
+                    document.write(quotes[i] + "\"");
+
+                    document.write("<em>- " + sources[i] + "</em>");
+
+                    document.write("</p>");
+
+                }
+
+                    // Stop hiding the script -->
+
+            </script>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+
+            <body>
+
+                <p>
+                <h2>Following is a random quote. To see a new quote
+
+                    just reload this page.</h2>
+                </p>
+
+
+
+                <script>
+
+                    getQuote();
+
+                    // Stop hiding the script -->
+
+                </script>
+
+                <header id="header4">
+                    <p style="text-align: left"></p>
+                </header>
+                <h1 class="headtxt2">FAQ:</h1>
+                <div id="wrap">
+
+
+                    <p>We want our visitors not to be confused but confident to make a purchase. Our job is to educate
+                        and inform the visitor on everything we offer. We have the most common questions and the answer to them.  
+                    </p>
+
+                </div>
+            </body>
+
+
+            <p id="source"></p>
+
+            <img width="550px" id="large_photo" style="border: 1px solid black; margin-left: 13px;" src="index2.jpg"
+                alt="large photo">
+        </div>
+
+        <section id="main-content">
+            <div>
+                <i>Click on the small images to change the larger image above</i>
+            </div>
+        </section>
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexa.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexa.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexb.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexb.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexc.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexc.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexd.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 6px;" src="indexd.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                    'indexe.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexe.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+
+        <a href="#!" onclick="javascript:document.images['large_photo'].src = 
+                  
+                        'indexf.jpg'">
+
+            <img style="border: 1px solid black; margin-right: 3px;" src="indexf.jpg" width="99px" height="85px"
+                alt="photo #1"></a>
+    </div>
+    </nav>
+    </div>
+
+    <section id="main">
+        <section id="left-content">
+
+            <p></p><br>
+            <section>
+                <div class="one"></div>
+                <div class="two"></div>
+            </section>
+
+            <ul>
+
+
+            </ul>
+            </div>
+        </section>
+        <section id="main-content">
+            <h1>Celebrating 20 Years of business...</h1><br><br><br>
+            </div>
+            <p></p>
+            <div>
+                <h2>We know that FAQ pages are important because we don not want our visitors to be confused.
+                    I want our customers to get answers to their questions. We want to take away the confusion. </h2>
+        </section>
+    </section>
+    <footer id="footer1">
+        <p>
+        <h2 class="headtxt6" style="text-align: center"><b></b></h2>
+        </p><br><br>
+        </div>
+        <p></p>
+        <div>
+            <section>
+                <div class="three"></div><br>
+                <div class="four"></div>
+            </section>
+            <b>
+                <h2>Follow us on:</h2>
+            </b><br>
+
+            <p style="color:orange;">Instagram 📸</p>
+            <h3>https://www.instagram.com/RGVWeld</h3>
+            <div>
+                <a href="https://www.instagram.com/" onclick="alert('A-ha! An Event!');">Go to instagram</a><br>
+            </div>
+            <p style="color:orange;">Twitter 🐦</p>
+            <h3>https://twitter.com/RGVWeld</h3>
+            <div>
+                <a href="https://twitter.com/?lang=en" onclick="alert('A-ha! An Event!');">Go to twitter</a>
+            </div>
+
+            </section>
+            </section>
+    </footer>
+
+    <footer id="footer2">
+        <nav style="text-align: center">
+            <a href="history.html">BBQ History</a> |
+            <a href="promotions.html">Promotions</a> |
+            <a href="customer.html">Customer/Q&A</a> |
+            <a href="videos.html">Videos</a> |
+        </nav>
+        <p style="color: white;">1234 Pecan Road, McAllen, Texas 78501</p>
+        <p style="text-align: center;">&copy; 2021 Flores BBQ PITS & Accessories, all rights reserved</p>
+    </footer>
+    <p></p>
+    <a href="../">Go Back To Homepage</a><br>
+    <strong>Juan L. Flores</strong>
+</body>
+
+</html>
